@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* HEADER */
+header {
+    padding: 30px 150px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* HERO */
+main {
+    background-image: url(../img/bg-header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+main h2 {
+    font-size: 8em;
+    font-weight: 600;
+}
+
+main hr {
+    border-color: aqua;
+    margin-top: 0.62em;
+}
+
+main p {
+    margin-top: 1.87em;
+}
+
+main button {
+    background: none;
+    border: 1px solid aqua;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main button:hover {
+    transform: scale(1.1);
+    color: aqua;
+}
+
+/* SERVICIOS */
+.informacion {
+    background: rgb(214, 249, 249);
+}
+
+.informacion .texto-info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 4.37rem 0;
+}
+
+.texto-info h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+.texto-info p {
+    font-size: 1.25rem;
+    color: grey;
+}
+
+/* ICONOS */
+.iconos {
+    width: 100%;
+    background: white;
+}
+
+.iconos .iconos-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 4.37rem 0;
+}
+
+.iconos .icono-cont {
+    text-align: center;
+}
+
+.iconos .icono-cont h3 {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 1.37rem;
+}
+
+.iconos .icono-cont p {
+    color: grey;
+}
+
+/* GALERIA */
+.informacion .subtitulo {
+    padding: 4.37rem 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.informacion .subtitulo h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.informacion .subtitulo p {
+    color: grey;
+}
+
+.informacion .galeria {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 1.87rem;
+    padding-bottom: 7rem;
+}
+
+/* FORMULARIO */
+.formulario {
+    background-image: url(../img/bg-stay.jpg);
+    background-size: cover;
+    height: auto;
+    text-align: center;
+    color: grey;
+    padding: 3.37rem 0;
+}
+
+.formulario .contenedor-formulario {
+    width: 40%;
+    margin: auto;
+}
+
+.formulario .texto h3 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.formulario .texto p {
+    margin-bottom: 3rem;
+}
+
+.formulario .escribirtexto {
+    width: 100%;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid grey;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.formulario .form-footer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.contenedor-formulario .form-footer button {
+    background: none;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: white;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    cursor: pointer;
+}
+
+/* MEDIA QUERIS */
+
+@media screen and (max-width:800px) {
+    header {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .iconos-info {
+        flex-flow: column wrap;
+        gap: 40px;
+        width: 100%;
+    }
+
+
+
+    .formulario .contenedor-formulario {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:625px) {
+    footer {
+        padding: 0;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:580px) {
+    main .texto-hero {
+        width: 90%;
+    }
+
+    main .texto-hero h2 {
+        font-size: 5rem;
+    }
+}
